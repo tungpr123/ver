@@ -1,0 +1,24 @@
+<html>
+  <head>
+
+    <script type="text/javascript">
+    function f(n) {
+        return n ? n * f(n - 1) : 1;
+    }
+    function c(n, k) {
+      return f(n)/(f(k)*f(n-k));
+    }
+    function c_p(m, n) {
+      return f(n+m-1)/(f(m)*f(n-1));
+    }
+    function a(n, k) {
+      return f(n)/f(n-k);
+    }
+
+    document.write(" 5 zadacha asnwer: a) p = ", 4 / 36, "<hr>",
+    "                            б) p = ", 6 / 36, "<hr>",
+    "                            в) p = ", 1 - (7 / 36), "<hr>" );
+  </script>
+                                  
+</html>
+            

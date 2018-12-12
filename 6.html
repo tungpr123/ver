@@ -1,0 +1,23 @@
+<html>
+  <head>
+
+    <script type="text/javascript">
+    function f(n) {
+        return n ? n * f(n - 1) : 1;
+    }
+    function c(n, k) {
+      return f(n)/(f(k)*f(n-k));
+    }
+    function c_p(m, n) {
+      return f(n+m-1)/(f(m)*f(n-1));
+    }
+    function a(n, k) {
+      return f(n)/f(n-k);
+    }
+
+    document.write(" 9 zadacha asnwer: p = ", (6 * f(2) * f(5)) / f(7) + "<hr>");
+
+  </script>
+                                  
+</html>
+            
